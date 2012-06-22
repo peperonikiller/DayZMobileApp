@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="map">Map</string>
+    <string name="app_name">DayZ Mobile</string>
+    <string name="loot">Loot Table</string>
+    <string name="weapon">Weapons</string>
+    <string name="vehicle">Vehicles</string>
+    <string name="equipment">Equipment</string>
+    <string name="consume">Consumables</string>
+    <string name="swipe">&#60;&#8212;Swipe buttons for more options&#8212;&#62;</string>
+    <string name="exit">Exit</string>
+    <string name="patch">Patch Notes</string>
+    <string name="servers">Server List</string>
+    <string name="survive">Survival</string>
+    <string name="lmap">Loot Map</string>
+
+</resources>
