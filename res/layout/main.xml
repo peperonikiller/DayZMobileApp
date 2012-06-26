@@ -77,7 +77,12 @@
         				android:layout_height="wrap_content"
         				android:text="@string/patch"
         				android:onClick="patch" />
-    				
+    				<Button
+        				android:id="@+id/button12"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/reddit"
+        				android:onClick="reddit" />
     				
     				<Button
         				android:id="@+id/button7"

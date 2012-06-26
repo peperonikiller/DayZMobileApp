@@ -14,5 +14,6 @@
     <string name="servers">Server List</string>
     <string name="survive">Survival</string>
     <string name="lmap">Loot Map</string>
+    <string name="reddit">/r/DayZ</string>
 
 </resources>

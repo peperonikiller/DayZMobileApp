@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -22,9 +23,11 @@ import android.widget.Toast;
 
 public class DayZActivity extends Activity {
 	WebView mWebView;
+	
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	
         super.onCreate(savedInstanceState);
         this.getWindow().requestFeature(Window.FEATURE_PROGRESS);
         setContentView(R.layout.main );
@@ -133,6 +136,12 @@ public class DayZActivity extends Activity {
     	//mWebView.setInitialScale(20);
     	mWebView.loadUrl("http://dayzmap.info/");
     	}
+    public void reddit(View view) {
+    	mWebView.getSettings().setSupportZoom(true);
+    	mWebView.getSettings().setBuiltInZoomControls(true);
+    	//mWebView.setInitialScale(20);
+    	mWebView.loadUrl("http://i.reddit.com/r/dayz/");
+    	}
     
     public void exit(View view) {
     	finish();
@@ -174,9 +183,7 @@ public class DayZActivity extends Activity {
             break;
         case R.id.item2:
         	AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        	builder.setMessage("DayZee uses links from dayzwiki.com, picacid.com, and arma2.swec.se" +
-        			" " +
-        			"App created by Peperonikiller (pwnsro.org)")
+        	builder.setMessage("DayZee uses links from: \ndayzwiki.com\npicacid.com\narma2.swec.se \n\nApp created by Peperonikiller (pwnsro.org)")
         	       .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
         	            public void onClick(DialogInterface dialog, int id) {
         	            	
@@ -185,7 +192,7 @@ public class DayZActivity extends Activity {
         	        .setNegativeButton("Market Page", new DialogInterface.OnClickListener() {
     	            public void onClick(DialogInterface dialog, int id) {
     	            	Intent intent = new Intent(Intent.ACTION_VIEW);
-    	            	intent.setData(Uri.parse("https://market.android.com/"));
+    	            	intent.setData(Uri.parse("market://details?id=org.pwnsro.dayz"));
     	            	startActivity(intent);
     	            }
     	        })
