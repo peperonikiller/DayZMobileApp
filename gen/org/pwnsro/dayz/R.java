@@ -27,8 +27,9 @@ public final class R {
         public static final int button7=0x7f06000d;
         public static final int button8=0x7f06000b;
         public static final int button9=0x7f06000a;
-        public static final int item1=0x7f060011;
+        public static final int item1=0x7f060012;
         public static final int item2=0x7f060010;
+        public static final int item3=0x7f060011;
         public static final int textView1=0x7f06000e;
         public static final int view1=0x7f060000;
         public static final int viewlin=0x7f060001;

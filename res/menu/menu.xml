@@ -5,6 +5,10 @@
         android:icon="@android:drawable/ic_menu_info_details"
         android:title="About"/>
     <item 
+        android:id="@+id/item3" 
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Toggle Fullscreen"/>
+    <item 
         android:id="@+id/item1" 
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="Exit"/>
